@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-configmap
+data:
+  myvalue: "Hello world"
+  drink: {{ coalesce .Values.favoriteDrink2 .Values.favoriteDrink | quote }}
+  serviceStatus: |
+    {{- if (lookup "v1" "Service" "default" "myservice") }}
+    Service exists!
+    {{- else}}  
+    Service does not exists.
+    {{- end}}
+  sha: {{ sha1sum "Hello world!" }}
+  and: {{ and 45 2 }}
