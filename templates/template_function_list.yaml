@@ -63,3 +63,77 @@ data:
 
   # UUID
   uuid: {{ uuidv4 }}
+
+# '''
+# # Source: mychart/templates/template_function_list.yaml
+# apiVersion: v1
+# kind: ConfigMap
+# metadata:
+#   name: template-function-list
+# data:
+#   # cryptographic
+#   hash: 45b21913dd24e4f55f04436ebb786c3618df536161008b9cf53aae682c831950
+
+#   # date
+#   timestamp: 2024-12-26
+    
+#   # dictionaries
+#   # notes: 
+#   #   indent:   thụt lề, thêm dòng mới. Vd: "key1 value1 -> indent -> thêm dòng -> key2 value2" => lỗi
+#   #   nindent:  thêm dòng mới, thụt lề. Vd: "key1 value2 -> thêm dòng -> indent -> key2 value2" => correct
+#   dict: |
+#     key1: value1
+#     key2: value2
+
+#   # encoding
+#   encoded: SGVsbG8sIFdvcmxkIQ==
+
+#   # filename
+#   fileName: file.txt
+
+#   # kubernetes and chart
+#   serviceExists: |
+#     No
+    
+
+#   # logic and flow control
+#   drink: coffee
+
+#   # list
+#   firstItem: apple
+
+#   # math
+#   sum: 8
+
+#   # float math
+#   product: 10
+
+#   # reflection
+#   valueType: string
+
+#   # regular expression
+#   isMatch: true
+
+#   # semantic Versions
+#   isCompatible: true
+
+#   # string
+#   upperCase: HELM
+
+#   # type conversion
+#   converted: 42
+
+#   # URL
+#   parseURL: | 
+#     fragment: ""
+#     host: example.com
+#     hostname: example.com
+#     opaque: ""
+#     path: /path
+#     query: ""
+#     scheme: https
+#     userinfo: ""
+
+#   # UUID
+#   uuid: 4e87e975-1b64-466e-9679-e0f1825f14b5
+# '''

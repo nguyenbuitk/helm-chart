@@ -3,3 +3,7 @@ favoriteDrink2: coffee2
 appConfig: |
   key1: value1
   key2: value2
+pizzaToppings:
+  - mushrooms
+  - cheese
+  - peppers

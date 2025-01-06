@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: name-template-configmap
+  {{- template "mychart.labels" }}
+  labels:
+{{ include "mychart.app" . | indent 4 }}
+data:
+  myvalue: "hello helm"
+  {{- range $key, $val := .Values.favorite }}
+  {{ $key }}: {{ $val | quote }}
+  {{- end }}
+{{ include "mychart.app" . | indent 2 }}
